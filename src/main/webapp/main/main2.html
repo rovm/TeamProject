@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="import" href="header.html">
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="stylesheet" type="text/css" media="all" href="../css/styles.css">
+  <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="../js/responsiveCarousel.min.js"></script>
+  <script type="text/javascript" src="Snap.svg-0.5.1/dist/snap.svg-min.js"></script>
+
+  <!-- <link rel="stylesheet" type="text/css" media="all" href="../css/main.css"> -->
+  <!-- <script type="text/javascript" src="../js/main.js"></script> -->
+  <title>HTML</title>
+  <style>
+  body {
+    border: 3px solid black;
+  }
+  div {
+    border: 3px solid red;
+  }
+  .ttop{
+    height: 500px;
+    background-color: skyblue;
+  }
+  .top{
+    background-image: url("img/main.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: white;
+  }
+  .container{
+    width: 1200px;
+    margin: auto auto;
+    text-align: center;
+  }
+  .book-form{
+    margin: auto auto;
+    height: 400px;
+  }
+
+  .menual-form{
+    margin: auto auto;
+    height: 400px;
+  }
+  .btn {
+    float: right;
+    margin: 0 0 0 5px;
+
+  }
+  .book {
+    display: inherit;
+    font-size: 33px;
+    text-align: left;
+    font-weight: bold;
+    color: gray;
+  }
+
+  .notic {
+    display: inherit;
+    font-size: 33px;
+    text-align: left;
+    font-weight: bold;
+    color: gray
+  }
+  .menual {
+    display: inherit;
+    font-size: 33px;
+    text-align: left;
+    font-weight: bold;
+    color: gray
+  }
+  .left-form{
+  margin: auto auto;
+  width: 50%;
+  float: left;
+}
+
+.right-form{
+  margin: auto auto;
+  width: 50%;
+  float: left;
+}
+#book-btn{
+  margin-right: 10px;
+}
+#notic-btn{
+  margin-right: 30px;
+}
+#notic-board{
+  width: 90%;
+  font-size: 20px;
+  margin: auto;
+}
+
+
+h1 {
+  color: gray;
+  float :left;
+}
+
+.Header_container {
+  width: 100%;
+  height: 450px;
+  background-color: rgb(162, 216, 245);
+
+
+}
+
+.Header_form {
+  border: 0px black solid;
+  height: 24px;
+  margin: 14px auto;
+  width: 980px;
+  position: relative;
+
+}
+
+.Header_menu {
+  width: 80px;
+  top: 15px;
+  height: 24px;
+  margin-left: 8px;
+  float: left;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.Header_page {
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+  float: left;
+}
+
+#Header_img {
+  width: 980px;
+  height: 330px;
+  margin: 40px auto 0px auto;
+}
+
+#Header_logo {
+  margin-top: -7px;
+  margin-left: 0px;
+  margin-right: 8px;
+  width: 178px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.footer_container {
+  width: auto;
+  border-top: solid 1px gray;
+}
+.footer_domain-form{
+  margin: 10px auto;
+  height: 200px;
+  border: solid 1px red;
+  text-align: center;
+}
+.footer_use{
+
+  font-size: 17px;
+
+}
+.footer_menu {
+  /*border: 1px black solid;*/
+
+  margin-left: 20px;
+
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="Header_container">
+    <div class="Header_form">
+      <div id="Header_logo" class="Header_menu">로고
+      </div>
+      <div id="Header_menual" class="Header_menu">메뉴얼
+      </div>
+      <div id="Header_community" class="Header_menu">커뮤니티
+      </div>
+      <div id="Header_create" class="Header_menu">동화만들기
+      </div>
+      <div id="Header_storeage" class="Header_menu">작품보관함
+      </div>
+      <div id="Header_myWright" class="Header_menu">내글관리
+      </div>
+      <div id="Header_camera" class="Header_menu">사진첩
+      </div>
+      <div id="Header_login" class="Header_menu">로그인
+      </div>
+      <div id="Header_sign" class="Header_menu">회원가입
+      </div>
+      <div id="Header_qna" class="Header_menu">고객센터
+      </div>
+    </div>
+    <div id="Header_img">
+    </div>
+    <!-- <div class="ttop">
+
+    </div> -->
+  <br><br><br><br>
+  <div class="top">
+
+  <div id="w">
+      <h1>명예의 전당</h1>
+
+      <div class="crsl-items" data-navigation="navbtns">
+        <div class="crsl-wrap">
+          <div class="crsl-item">
+            <div class="thumbnail">
+              <img src="img/thumb01.jpg" alt="nyc subway">
+              <span class="photobest">BEST!</span>
+            </div>
+
+            <h3><a href="#">백설공주</a></h3>
+
+
+            <p class="readmore"><a href="#">More &raquo;</a></p>
+          </div><!-- post #1 -->
+
+          <div class="crsl-item">
+            <div class="thumbnail">
+              <img src="img/thumb02.jpg" alt="danny antonucci">
+              <span class="photobest">BEST!</span>
+            </div>
+
+            <h3><a href="#">아기돼지 삼형제</a></h3>
+
+
+            <p class="readmore"><a href="#">More &raquo;</a></p>
+          </div><!-- post #2 -->
+
+          <div class="crsl-item">
+            <div class="thumbnail">
+              <img src="img/thumb03.jpg" alt="watercolor paints">
+              <span class="photobest">BEST!</span>
+            </div>
+
+            <h3><a href="#">토끼와 거북이</a></h3>
+
+
+            <p class="readmore"><a href="#">More &raquo;</a></p>
+          </div><!-- post #3 -->
+
+          <div class="crsl-item">
+            <div class="thumbnail">
+              <img src="img/thumb04.jpg" alt="apple ipod classic photo">
+              <span class="photobest">BEST!</span>
+            </div>
+
+            <h3><a href="#">신데렐라</a></h3>
+
+
+            <p class="readmore"><a href="#">More &raquo;</a></p>
+          </div><!-- post #4 -->
+
+          <div class="crsl-item">
+            <div class="thumbnail">
+              <img src="img/thumb05.jpg" alt="web design magazines">
+              <span class="photobest">BEST!</span>
+            </div>
+
+            <h3><a href="#">흥부와 놀부</a></h3>
+
+
+            <p class="readmore"><a href="#">More &raquo;</a></p>
+          </div><!-- post #5 -->
+        </div><!-- @end .crsl-wrap -->
+      </div><!-- @end .crsl-items -->
+
+      <nav class="slidernav">
+        <div id="navbtns" class="clearfix">
+          <a href="#" class="previous">이전</a>
+          <a href="#" class="next">다음</a>
+        </div>
+      </nav>
+    </div><!-- @end #w -->
+  </div>
+
+  <br><br><br><br>
+<div class="container">
+    <div class="book-form">
+        <span class="book">동화만들기
+          <button type="button" id="book-btn"class="btn btn-info">더보기</button>
+        </span><br><br><br>
+      <div>
+        <img src="img/thumb02.jpg" width="350px" height="200px">
+        <img src="img/thumb01.jpg" width="350px" height="200px">
+        <img src="img/thumb05.jpg" width="350px" height="200px">
+      </div>
+    </div>
+    <br><br>
+  <div class="left-form">
+      <span class="notic">공지사항
+        <button type="button" id="notic-btn"class="btn btn-info">더보기</button>
+      </span>
+      <br>
+      <br>
+    <table class="table table-hover" font-size="20px" id="notic-board">
+      <thead>
+        <tr class="success">
+          <td>번호</td>
+          <td>제목</td>
+          <td>작성자</td>
+          <td>작성일</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td>1</td>
+        <td>으하</td>
+        <td>으하하</td>
+        <td>9595</td>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>으하</td>
+        <td>으하하</td>
+        <td>9595</td>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>으하</td>
+        <td>으하하</td>
+        <td>9595</td>
+        </tr>
+        <tr>
+        <td>.</td>
+        <td>.</td>
+        <td>.</td>
+        <td>.</td>
+        </tr>
+        <tr>
+        <td>.</td>
+        <td>.</td>
+        <td>.</td>
+        <td>.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="right-form">
+    <span class="menual">메뉴얼
+    <button type="button" class="btn btn-info">기본조작방법</button>
+    <button type="button" class="btn btn-info">녹음방법</button>
+    <button type="button" class="btn btn-info">제작방법</button>
+    </span>
+    <br>
+    <br>
+    <img src="img/video.jpg" width="500px" height="270px">
+    <!-- <video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> -->
+  </div>
+
+</div>
+
+<div class="footer_container">
+<div class="footer_domain-form">
+
+  <span id="footer_a" class="menu">도움말
+  </span>
+  <span id="footer_b" class="footer_menu">이용약관
+  </span>
+  <span id="footer_c" class="footer_menu">운영원칙
+  </span>
+  <span id="footer_d" class="footer_menu">개인정보 처리방침
+  </span>
+  <span id="footer_e" class="footer_menu">책임의 한계와 법적고지
+  </span>
+  <span id="footer_f" class="footer_menu">고객센터
+  </span>
+  <span id="footer_g" class="footer_menu">제휴제안
+  </span>
+  <span id="footer_h" class="footer_menu">정보보호인증사이트
+  </span><br>
+  <span class="footer_use"><font color="gray" face="serif">본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.<font></span><br>
+  <span class="footer_use"><font color="gray" face="serif">Copyright © FTBook Corp. All Rights Reserved. ©Olivestudio Ltd., EBS, Dream search C&amp;C. All Rights Reserved.<font></span>
+</div>
+
+</div>
+
+
+  <script type="text/javascript">
+  $(function(){
+    $('.crsl-items').carousel({
+      visible: 3,
+      itemMinWidth: 180,
+      itemEqualHeight: 370,
+      itemMargin: 9,
+    });
+
+    $("a[href=#]").on('click', function(e) {
+      e.preventDefault();
+    });
+  });
+
+
+  </script>
+<form>
+
+</form>
+
+</body>
+</html>
+
+
+
+
+<!-- -->
