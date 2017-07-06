@@ -232,6 +232,10 @@ a:hover {
   text-decoration: none;
 }
 
+a{
+  color: white;
+}
+
 h1 {
   margin-top: 0;
   font-weight: bold;
@@ -249,28 +253,62 @@ th, td {
     border-top: 1px solid #ddd;
 }
 
-.container {
-  margin-left: 0;
-  width: 100%;
-  height: 230px;
-  background-color: rgb(162, 216, 245);
-  /*border: 2px black solid;*/
+#img {
+  border: 0;
+  width: 200px;
+  height: 150px;
+  background-image: url("img/monster01.png");
 }
 
-.form {
-  border: 0px black solid;
-  height: 24px;
-  margin: 14px auto;
-  width: 980px;
-  position: relative;
+#logo {
+  margin-top: -7px;
+  margin-left: 0px;
+  margin-right: 8px;
+  width: 178px;
+  height: 36px;
+  line-height: 36px;
+}
 
+#box {
+  border: 0px;
+  width: 980px;
+  height: 150px;
+  margin: 40px auto;
+  position: relative;
+}
+
+#menual-Name {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: 300%;
+  font-weight: bold;
+  color: white;
+  margin-right: 18px;
+}
+
+
+#container {
+  padding: 15px;
+  margin-top: 0;
+  width: 100%;
+  height: 230px;
+  background-color: rgb(189, 209, 33);
+}
+
+
+.form {
+  height: 24px;
+  margin: 0 auto;
+  width: 950px;
+  position: relative;
 }
 
 .menu {
   width: 80px;
   top: 15px;
   height: 24px;
-  margin-left: 8px;
+  margin-left: 4px;
   float: left;
   text-align: center;
   color: white;
@@ -283,6 +321,7 @@ th, td {
   margin: 3px;
   float: left;
 }
+
 
 .com-somenu {
   width: 90px;
@@ -317,27 +356,23 @@ th, td {
   font-size: 110%;
 }
 .footer_container {
-  margin: 0 auto;
   width: 100%;
   border-top: solid 1px gray;
+  margin: auto;
 }
 .footer_domain-form{
+  width: 980px;
   margin: 10px auto;
-  height: 80%;
-  /*border: solid 1px red;*/
+  height: 80px;
   text-align: center;
 }
 .footer_use{
-
   font-size: 17px;
-
 }
 .footer_menu {
-  /*border: 1px black solid;*/
-
-  margin-left:20px;
-
+  margin-left: 20px;
 }
+
 .com-oldbest-box {
   padding-top: 20px;
   padding-left: 15px;
@@ -457,10 +492,8 @@ th, td {
   color: white;
 }
 
-
-
 div {
-  /*border: 1px red solid;*/
+  border: 1px red solid;
 }
 
 #kingmon {
