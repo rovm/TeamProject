@@ -1,0 +1,241 @@
+<!-- AJAX 사용법 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML</title>
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+                         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+                         crossorigin="anonymous">
+  <style>
+  /*38 143 255 파란색입니다*/
+  .container {
+    width: 100%;
+    height: 220px;
+    background-color: rgb(255, 238, 52);
+  }
+
+  .form {
+    /*border: 1px black solid;*/
+    height: 24px;
+    margin-top: 14px;
+
+  }
+
+  .menu {
+    margin-top: 5px;
+    margin-left: 8.5px;
+    height: 60px;
+    padding: 10px;
+    width: 180px;
+    float: left;
+  }
+
+
+  .fa-map-signs {
+    color: brown;
+  }
+
+  .fa-weixin {
+    color: rgb(0, 51, 153);
+  }
+
+  .fa-pencil-square-o {
+    color: red;
+  }
+
+
+  .fa-book {
+    color: rgb(0, 129, 0);
+  }
+
+  .fa-shopping-cart {
+    color: rgb(255, 0, 221);
+  }
+
+  .fa-camera {
+    color: rgb(128, 65, 217);
+  }
+
+  .font {
+    color: black;
+    font-weight: bold;
+  }
+
+
+
+  #menual {
+    text-align: center;
+  }
+
+  #login {
+    background-color: yellow;
+    width: 57px;
+    height: 24px;
+    left:1310px;
+    top: 15px;
+    position: absolute;
+  }
+  #sign {
+    background-color: yellow;
+    left:1370px;
+    width: 57px;
+    top: 15px;
+    height: 24px;
+    position: absolute;
+    margin-right: 3px;
+  }
+
+  #qna {
+    background-color: yellow;
+    left:1430px;
+    top: 15px;
+    width: 57px;
+    height: 24px;
+    /*border: black solid 1px;*/
+    position: absolute;
+  }
+
+  #logo {
+    margin: 20px auto;
+    height: 70px;
+    width: 800px;
+    padding: 10px;
+  }
+
+  #menu-form {
+    height: 70px;
+    width: 1145px;
+    margin: 5px auto;
+    text-align:center;
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+ a:hover {
+   text-decoration: none;
+ }
+
+
+  div {
+    border: solid 1px red;
+    border-radius: 10;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="form">
+    <div id="login">
+    </div>
+    <div id="sign">
+    </div>
+    <div id="qna">
+    </div>
+  </div>
+  <div id="logo">
+  </div>
+
+<div id="menu-form">
+    <div id="menual" class="menu">
+      <a href="#" class="fa fa-map-signs" aria-hidden="true"></a><a href="#" id="font" class="font"> 메뉴얼</a>
+    </div>
+  <div id="community" class="menu">
+    <a href="#" class="fa fa-weixin" aria-hidden="true"></a><a href="#" id="font2" class="font">  커뮤니티</a>
+  </div>
+  <div id="create" class="menu">
+    <a href="#" class="fa fa-book" aria-hidden="true"></a><a href="#" id="font3" class="font"> 동화만들기</a>
+  </div>
+  <div id="storage" class="menu">
+    <a href="#" class="fa fa-shopping-cart" aria-hidden="true"></a><a href="#" id="font4" class="font"> 작품보관함</a>
+  </div>
+  <div id="myWright" class="menu">
+    <a href="#" class="fa fa-pencil-square-o" aria-hidden="true"></a><a href="#" id="font5" class="font"> 내글관리</a>
+  </div>
+  <div id="camera" class="menu">
+    <a href="#" class="fa fa-camera" aria-hidden="true"></a><a href="#" id="font6" class="font"> 사진첩</a>
+  </div>
+</div><br>
+
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+"use strict"
+
+var first = true;
+var sec = true;
+// hoverEventFont(".fa-map-signs", "font", "brown");
+
+hoverClass(".fa-map-signs", "#font", "brown", "#menual")
+hoverClass(".fa-weixin", "#font2", "rgb(0, 51, 153)", "#community")
+hoverClass(".fa-book", "#font3", "rgb(0, 129, 0)", "#create")
+hoverClass(".fa-shopping-cart", "#font4", "rgb(255, 0, 221)", "#storage")
+hoverClass(".fa-pencil-square-o", "#font5", "red", "#myWright")
+hoverClass(".fa-camera", "#font6", "rgb(128, 65, 217)", "#camera")
+
+
+
+
+function hoverClass(fa, font, col, did) {
+
+  $(fa).hover(function(){
+    console.log("이정표 호버 이벤트")
+
+    if (first == true) {
+      $(did).css("background-color", col)
+
+      $(fa).css("color", "white")
+      $(font).css("color", "white")
+      first= false
+      return;
+    }
+
+
+    if(first == false) {
+      $(did).css("background-color", "")
+      $(font).css("color", "black")
+      $(fa).css("color", col)
+
+      first=true
+      return;
+    }
+  });
+
+
+
+  $(font).hover(function(){
+
+    console.log("메뉴얼 호버 이벤트")
+
+    if (sec == true) {
+      $(did).css("background-color", col)
+      $(fa).css("color", "white")
+      $(font).css("color", "white")
+      sec = false
+      return;
+    }
+
+
+    if(sec == false) {
+      $(did).css("background-color", "")
+      $(font).css("color", "black")
+      $(fa).css("color", col)
+      sec = true
+      return;
+    }
+  });
+}
+
+
+
+</script>
+</html>
+
+
+
+
+<!-- -->
