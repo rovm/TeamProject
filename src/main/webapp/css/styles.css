@@ -73,6 +73,7 @@ h1 {
 .crsl-items {
   display: block;
   padding: 5px;
+  height: 260px;
 }
 
 .crsl-item {

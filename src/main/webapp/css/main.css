@@ -1,14 +1,17 @@
-html, body {
+body {
+  text-align: center;
+}
+.Header_animal {
+
   position: relative;
   font-family: 'Montserrat', sans-serif;
   background-color: white;
-  position: relative;
   width: 100%;
-  height: 50%;
+  height: 100%;
   max-width: 100%;
-  min-height: 80%;
+  min-height: 50%;
   color: #ffffff;
-  margin: 0;
+  margin: auto;
   overflow: hidden; }
 
 .section {
@@ -42,11 +45,13 @@ html, body {
 .wrapper {
   display: table-cell;
   vertical-align: middle;
-  padding: 10px 30px 30px 30px; }
+  padding: 10px 30px 10px 30px;
+  height: 100px;
+ }
 
 .animal {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 800px;
   position: relative; }
 
 .animal-svg--dashed {
@@ -68,7 +73,7 @@ html, body {
 #lion-dashed, #lion {
   opacity: 0; }
 
-.restart {
+/*.restart {
   z-index: 6;
   position: absolute;
   left: 30px;
@@ -78,7 +83,8 @@ html, body {
   letter-spacing: 20px;
   transition: all 1s ease-in-out;
   display: none;
-  cursor: pointer; }
+  cursor: pointer; }*/
+
 
 .restart:hover {
   color: #4f0079; }

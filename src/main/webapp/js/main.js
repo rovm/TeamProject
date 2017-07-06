@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function(){
 
 	function animateSVG(section, dashedId, normalId, totalLengthTimes, totalLengthDivision) {
@@ -39,14 +43,16 @@ $(document).ready(function(){
 
     }
 
-    $(".restart").click(function() {
-    	$(".restart").addClass("patient");
-    	animate();
-    });
+
+    // $(".restart").click(function() {
+    // 	$(".restart").addClass("patient");
+    // 	animate();
+    // });
+    animate();
 
     function animate() {
 
-    	$(".restart").fadeOut(1000);
+    	// $(".restart").fadeOut(1000);
 
     	$(".section--fifth").addClass("fadeOutUpc");
     	$(".section--first").removeClass("fadeOutUpc");
@@ -81,14 +87,11 @@ $(document).ready(function(){
 
 	    }, 12000);
 
-	    setTimeout(function() {
-	    	$(".restart").removeClass("patient");
-	    	$(".restart").fadeIn(1000);
-
-	    }, 16000);
+			setTimeout(function() {
+ 			 animate()
+ 		 }, 16000);
 
     }
 
-    animate();
 
 });
