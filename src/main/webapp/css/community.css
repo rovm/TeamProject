@@ -228,16 +228,12 @@ body {
   height: auto;
 }
 
-div {
-  /*border: solid 1px red;*/
-  /*border-radius: 10;*/
-}
-
 a:hover {
   text-decoration: none;
 }
 
 h1 {
+  margin-top: 0;
   font-weight: bold;
 }
 
@@ -343,33 +339,72 @@ th, td {
 
 }
 .com-oldbest-box {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 10px;
 
-  margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
-  text-align: left;
-  background-color: ivory;
+  text-align: right;
+  background-color: darkgray;
   height: auto;
-  width: 980px;
-  border: 1px green solid;
+  width: 100%;
+  /*border: 1px green solid;*/
+}
+.com-oldbest {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -300px;
+  float: right;
 
+  width: 800px;
+  height: 300px;
+}
 
+.com-oldbest-standard {
+  height: auto;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .com-titl-box {
 
-  left: 0;
-  border: 1px black solid;
+  color: white;
+  font-weight: bold;
+  font-size: 200%;
+
+  /*border-right: 1px black solid;*/
   width: 150px;
   height: 300px;
 }
 
-.com-oldbest {
-  margin-top: -300px;
-  float: right;
-  border: 1px red solid;
-  width: 800px;
+.drop {
+  text-align: right;
+  line-height: 170px;
+  margin-top: 150px;
+  height: 100px;
+  width: 975px;
+}
+.drop>select {
+  margin-right: 0;
+}
+.best>a {
+  color: white;
+}
+.best {
+
+  text-align: center;
+  margin-left: 34px;
+  width: 220px;
   height: 300px;
+  /*border: 1px solid red;*/
+  float: left;
+}
+
+.old-best {
+  width: 220px;
+  height: 250px;
 }
 
 
@@ -392,7 +427,7 @@ th, td {
 #menuName {
   position: absolute;
   bottom: 0px;
-  right: 0px;
+  right: 13px;
   width: auto;
   height: auto;
   color: white;
@@ -400,7 +435,7 @@ th, td {
 
 #box {
   border: 0px;
-  width: 980px;
+  width: 975px;
   height: 150px;
   margin: 40px auto;
   position: relative;
@@ -409,7 +444,7 @@ th, td {
 
 #com-somenu {
   margin: 0 auto;
-  width: 980px;
+  width: 970px;
   height: 95px;
   text-align: center;
 }
@@ -424,8 +459,9 @@ th, td {
 
 
 
-
-
+div {
+  /*border: 1px red solid;*/
+}
 
 #kingmon {
   font-size: 50px;
