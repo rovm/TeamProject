@@ -12,9 +12,9 @@
 
   #img {
     border: 0;
-    width: 200px;
-    height: 150px;
-    background-image: url("img/monster01.png");
+    width: 400px;
+    height: 200px;
+    background-image: url("img/monsterDouble.png");
   }
 
   #logo {
@@ -34,25 +34,6 @@
     position: relative;
   }
 
-  #select_sort{
-    float: right;
-    margin-top: -50px;
-  }
-
-  #select_sort > select {
-    width: 250px;
-    height: 40px;
-  }
-
-  #book-list {
-    width: 60%;
-    margin-left: 20%;
-  }
-
-  #book-list > div {
-    padding: 20px;
-
-  }
   .standard-collection{
     width: 980px;
     margin: auto;
@@ -84,7 +65,8 @@
     margin-top: 0;
     width: 100%;
     height: 230px;
-    background-color: rgb(189, 209, 33);
+    /*background-color: rgb(255, 227, 102);*/
+    background-color: hotpink;
   }
 
   .form {
@@ -140,71 +122,6 @@
  }
 
 
-
-body{
-  background-color: ivory;
-}
-img{
-  border: 1px solid black;
-  width: 300px;
-  height: 200px;
-}
-
-.column {
-  width: 980px;
-  height: auto;
-	margin: 0px auto;
-	padding: 0;
-}
-.column:last-child {
-	padding-bottom: 60px;
-}
-.column::after {
-	content: '';
-	clear: both;
-	display: block;
-}
-.column div {
-	position: relative;
-	float: left;
-	width: 300px;
-	height: 200px;
-	margin: 0 0 0 25px;
-	padding: 0;
-}
-.column div:first-child {
-	margin-left: 0;
-}
-.column div span {
-	position: absolute;
-	bottom: -20px;
-	left: 0;
-	z-index: -1;
-	display: block;
-	width: 300px;
-	margin: 0;
-	padding: 0;
-	color: #444;
-	font-size: 18px;
-	text-decoration: none;
-	text-align: center;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	opacity: 0;
-}
-figure {
-	width: 300px;
-	height: 200px;
-	margin: 0;
-	padding: 0;
-	background: black;
-	overflow: hidden;
-}
-figure:hover+span {
-	bottom: -36px;
-	opacity: 1;
-}
-
 a{
   color: white;
 }
@@ -212,29 +129,107 @@ a:hover {
   text-decoration: none;
 }
 
-h3{
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+body {
+  background: url(https://f.cl.ly/items/2u1z0Y0I1U061j410F08/debut_light.png);
+}
+section {
+  max-width: 1000px;
+  margin: 2.6em auto;
+  padding: 0 4%;
+}
+
+h1 {
+  font: normal 1.8em/1.3 Capita, Georgia, serif;
+  margin: 0 0 1.2em;
+  color: #8ab300;
+}
+.photo-stack-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  font-weight: 500;
 }
-/*div{
-  border: 1px solid black;
-}*/
-
-/* Zoom In #1 */
-.hover01 figure img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+.photo-stack-grid:after {
+  content: " ";
+  display: table;
+  clear: both;
 }
-.hover01 figure:hover img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
+.photo-stack-grid li {
+  width: 46%;
+  float: left;
+  margin: 0 8% 2.8em 0;
+}
+.photo-stack-grid li:nth-child(2n) {
+  margin-right: 0;
 }
 
-/*div{
-  border: 1px solid black;
-}*/
+/* remember to clear first item in each row */
+.photo-stack-grid li:nth-child(2n + 1) {
+  clear: left;
+}
+
+.photo-stack-grid a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font: 600 0.8em/1.3 "Open Sans", sans-serif;
+
+}
+a > span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  font-size: 140%;
+}
+
+.photo-stack {
+	position: relative;
+	margin: 0 4% 2em;
+  display: block;
+}
+.photo-stack:before,
+.photo-stack:after,
+.photo-stack img {
+	display: block;
+	background: #ccc;
+	border: 5px solid #fff;
+  border-radius: 3px;
+	padding: 1px;
+
+}
+.photo-stack:before,
+.photo-stack:after {
+  content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: #969289;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+  transform: rotate(6deg);
+}
+.photo-stack:after {
+	transform: rotate(10deg);
+  z-index: -1;
+}
+.photo-stack img {
+	transform: rotate(0deg);
+	width: 100%;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2),
+              0 14px 18px -12px rgba(0, 0, 0, 0.9);
+}
+.ie8 .photo-stack:before,
+.ie8 .photo-stack:after {
+	display: none;
+}
+
   </style>
 </head>
 <body>
@@ -273,60 +268,80 @@ h3{
     </div>
   </div>
   <div id="box">
-    <div id="img"></div><div id="menual-Name">동화만들기</div>
+    <div id="img"></div><div id="menual-Name">사진첩</div>
     </div>
-  </div><br>
-  <div class="standard-collection">
-  <h1>책목록</h1>
-    <div id="select_sort">
-      <select>
-        <option value="volvo">정렬방식</option>
-        <option value="saab">인기순</option>
-        <option value="mercedes">최신순</option>
-        <option value="audi">장르별</option>
-      </select>
-    </div>
-  </div>
-<br>
+  </div><br><br><br><br>
 
-<br>
+<section>
+<ul class="photo-stack-grid">
+  <li>
+    <a href="#d">
+      <figure class="photo-stack">
+        <img src="./img/thumb01.jpg" alt="picture" />
+      </figure>
+      <span>아기돼지 삼형제</span>
+    </a>
+  </li>
+  <li>
+    <a href="#d">
+      <figure class="photo-stack">
+        <img src="./img/thumb02.jpg" alt="picture" />
+      </figure>
+      <span>아기돼지 삼형제</span>
+    </a>
+  </li>
+  <li>
+    <a href="#d">
+      <figure class="photo-stack">
+        <img src="./img/thumb03.jpg" alt="picture" />
+      </figure>
+      <span>토끼들</span>
+    </a>
+  </li>
+  <li>
+    <a href="#d">
+      <figure class="photo-stack">
+        <img src="./img/thumb04.jpg" alt="picture" />
+      </figure>
+      <span>참새들</span>
+    </a>
+  </li>
+  <li>
+    <a href="#d">
+      <figure class="photo-stack">
+        <img src="./img/thumb05.jpg" alt="picture" />
+      </figure>
+      <span>감따러가세</span>
+    </a>
+  </li>
+  <li>
+    <a href="#d">
+      <figure class="photo-stack">
+        <img src="./img/video.jpg" alt="picture" />
+      </figure>
+      <span>불량토끼</span>
+    </a>
+  </li>
+  <li>
+    <a href="#d">
+      <figure class="photo-stack">
+        <img src="./img/thumb01.jpg" alt="picture" />
+      </figure>
+      <span>아기돼지 삼형제</span>
+    </a>
+  </li>
+  <li>
+    <a href="#d">
+      <figure class="photo-stack">
+        <img src="./img/thumb02.jpg" alt="picture" />
+      </figure>
+      <span>아기돼지 삼형제</span>
+    </a>
+  </li>
+</ul>
 
-	<div class="hover01 column">
-		<div>
-			<figure><img src="./img/thumb01.jpg" /></figure><h3>아기돼지 삼형제<h3>
-		</div>
-		<div>
-			<figure><img src="./img/thumb02.jpg" /></figure><h3>아기돼지 삼형제<h3>
-		</div>
-		<div>
-			<figure><img src="./img/thumb03.jpg" /></figure><h3>아기돼지 삼형제<h3>
-		</div>
-	</div>
-<br><br><br><br><br>
-  <div class="hover01 column">
-		<div>
-			<figure><img src="./img/thumb01.jpg" /></figure><h3>아기돼지 삼형제<h3>
-		</div>
-		<div>
-			<figure><img src="./img/thumb02.jpg" /></figure><h3>아기돼지 삼형제<h3>
-		</div>
-		<div>
-			<figure><img src="./img/thumb03.jpg" /></figure><h3>아기돼지 삼형제<h3>
-		</div>
-	</div>
-<br><br><br><br><br>
-  <div class="hover01 column">
-		<div>
-			<figure><img src="./img/thumb01.jpg" /></figure><h3>아기돼지 삼형제<h3>
-		</div>
-		<div>
-			<figure><img src="./img/thumb02.jpg" /></figure><h3>아기돼지 삼형제<h3>
-		</div>
-		<div>
-			<figure><img src="./img/thumb03.jpg" /></figure><h3>아기돼지 삼형제<h3>
-		</div>
-	</div>
-<br><br><br><br><br>
+</section>
+
   <div class="standard-collection">
     <button type="button" name="button">이전</button>&nbsp;1&nbsp;
     <button type="button" name="button">다음</button>
