@@ -263,7 +263,7 @@ th, td {
   border: 0;
   width: 200px;
   height: 150px;
-  background-image: url("img/monster01.png");
+  background-image: url("../img/monster01.png");
 }
 
 #logo {
@@ -461,7 +461,7 @@ th, td {
   border: 0;
   width: 200px;
   height: 150px;
-  background-image: url("../main/img/img1.png");
+  background-image: url("../img/img1.png");
 }
 
 #logo {
