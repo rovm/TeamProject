@@ -38,6 +38,14 @@
     line-height: 36px;
   }
 
+  #box {
+    border: 0px;
+    width: 980px;
+    height: 150px;
+    margin: 40px auto;
+    position: relative;
+  }
+
   #menual-Name {
     position: absolute;
     bottom: 0px;
@@ -45,14 +53,16 @@
     font-size: 300%;
     font-weight: bold;
     color: white;
+    margin-right: 18px;
   }
 
-  #box {
-    border: 0px;
-    width: 980px;
-    height: 150px;
-    margin: 40px auto;
-    position: relative;
+
+  #container {
+    padding: 15px;
+    margin-top: 0;
+    width: 100%;
+    height: 230px;
+    background-color: rgb(255, 157, 201);
   }
 
   #intro{
@@ -67,26 +77,18 @@
     text-align: center;
   }
 
-  .container {
-    width: 100%;
-    height: 230px;
-    background-color: rgb(255, 157, 201);
-
-  }
-
   .form {
     height: 24px;
-    margin: 14px auto;
-    width: 980px;
+    margin: 0 auto;
+    width: 950px;
     position: relative;
-
   }
 
   .menu {
     width: 80px;
     top: 15px;
     height: 24px;
-    margin-left: 8px;
+    margin-left: 4px;
     float: left;
     text-align: center;
     color: white;
@@ -116,22 +118,24 @@
     color: gray;
   }
 
- .footer_container {
-   width: 100%;
-   border-top: solid 1px gray;
- }
- .footer_domain-form{
-   margin: 10px auto;
-   height: 80px;
-   text-align: center;
- }
- .footer_use{
-   font-size: 17px;
- }
- .footer_menu {
-   /*border: 1px black solid;*/
-   margin-left: 20px;
- }
+  .footer_container {
+    width: 100%;
+    border-top: solid 1px gray;
+    margin: auto;
+  }
+  .footer_domain-form{
+    width: 980px;
+    margin: 10px auto;
+    height: 80px;
+    text-align: center;
+  }
+  .footer_use{
+    font-size: 17px;
+  }
+  .footer_menu {
+    margin-left: 20px;
+  }
+
 /*div{
   border: 1px solid black;
 }*/
@@ -159,12 +163,23 @@ button{
   margin-left: 5px;
 }
 
+h1{
+  font-weight: bold;
+  color: gray;
+}
+
+a{
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+}
 
   </style>
 </head>
 <body>
 
-<div class="container">
+<div id="container">
   <div class="form">
     <div id="logo" class="menu">동화와만나요
     </div>
