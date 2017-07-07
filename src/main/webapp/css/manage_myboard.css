@@ -48,7 +48,7 @@ th, td {
   border: 0;
   width: 200px;
   height: 150px;
-  background-image: url("../main/img/456.png");
+  background-image: url("../main/img/paranmonster.png");
 }
 
 #logo {
@@ -131,7 +131,17 @@ th, td {
   margin:0 auto;
   position: relative;
 }
+/*.bord-container-form{
 
+}*/
+.fa {
+  margin-left: 286px;
+  margin-right: 30px;
+
+}
+.fa-search:before {
+    font-size: 30px;
+}
 .bord-button{
   margin: 30px 0 14px 58px;
   float: left;
@@ -139,7 +149,6 @@ th, td {
   margin-bottom: 14px;
 }
 .top-input{
-  margin-left: 9px;
   height: 40px;
 
 }
@@ -179,25 +188,6 @@ th, td {
   color: tomato;
 }
 
-.fa {
-  font-size: 50px;
-}
-
-.fa-optin-monster {
-  margin-top: 4px;
-  color: red;
-}
-
-.fa-reddit-alien {
-  margin-top: 4px;
-  color: orange;
-}
-
-.fa-linux {
-  margin-top: 4px;
-  color: darkblue;
-}
-
 .com-font {
   color: black;
   font-weight: bold;
@@ -232,31 +222,4 @@ th, td {
 .top-font{
   font-size: 40px;
   font-weight: bold;
-}
-
-
-#com-somenu {
-  margin: 0 auto;
-  width: 980px;
-  height: 95px;
-  text-align: center;
-}
-
-#com-titl-best {
-  margin: 10px auto 0 auto;
-  width: 300px;
-  height: 80px;
-  color: white;
-}
-
-#kingmon {
-  font-size: 50px;
-}
-
-#togemon {
-  font-size: 50px;
-}
-
-#bordermon {
-  font-size: 50px;
 }
