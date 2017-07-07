@@ -14,7 +14,11 @@ a{
   color: white;
 }
 
-
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
 
 /*헤더시작*/
 
@@ -144,6 +148,92 @@ a{
   font-size: 110%;
 }
 
+.video {
+  height: 200px;
+  width: 700px;
+  box-shadow: 10px 10px 20px grey;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 250, 255);
+  /*border: black 0.5px solid;*/
+  padding-top: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.video > div > img {
+  margin-left: 10px;
+  float: left;
+  width: 200px;
+  height: 180px;
+  border: 1px black solid
+}
+
+.video:hover {
+  background-color: rgb(189, 209, 33);
+}
+
+.vid-text {
+  position: absolute;
+  left: 230px;
+  width: 410px;
+  height: 158px;
+  margin-left: 10px;
+  /*border: 1px red solid*/
+}
+
+.vid-date {
+  margin-left: 567px;
+  bottom: 10px;
+  position: absolute;
+  text-align: right;
+
+  /*border: 1px green solid*/
+}
+.vid-date > div {
+  text-align: left;
+}
+
+.bord-button {
+  margin-bottom: 20px;
+}
+.top-input{
+  margin-right: 5px;
+  height: 40px;
+  float: right;
+}
+
+.bottom-button-box {
+  text-align: center;
+  /*border: 1px black solid;*/
+  width: 120px;
+  margin: 40px auto -5px auto
+}
+
+.bottom-button-box > a {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 150%;
+  line-height: 25px;
+  color: black
+}
+
+#next {
+  float: right;
+}
+
+#prev {
+  float: left;
+}
+
+#bord-btn{
+  height: 40px;
+  margin-bottom: 4px;
+  float: right;
+}
+
 #com-somenu {
   margin: 5px auto;
   width: 970px;
@@ -164,7 +254,39 @@ a{
 }
 
 #com-together {
-  height: 1080px;
-  border: 1px black solid;
-  box-shadow: 10px 10px 20px grey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 54px;
+
+  width: 980px;
+  height: auto;
+  border-radius: 30px;
+  border: 1px darkgrey solid;
+  /*box-shadow: 10px 10px 20px grey;*/
+  background-color: antiquewhite;
+}
+
+#video-box {
+  margin-bottom: 30px;
+  /*border: 1px black solid;*/
+}
+
+
+#vid-first {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+#vid-last {
+  margin-top: -23px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#vid-serch {
+  text-align: right;
+  /*border: 1px black solid;*/
+  margin: 0 auto 20px auto;
 }
